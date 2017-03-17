@@ -1,0 +1,15 @@
+---
+
+- name: Copy Kibana Repo
+  copy:
+    src=kibana.repo dest=/etc/yum.repos.d/kibana.repo
+
+- name: Install Kibana
+  yum: name=kibana state=installed
+
+- name: Restrict hosts
+  lineinfile: 'dest=/opt/kibana/config/kibana.yml regexp=server.host line="server.host: 0.0.0.0"'
+
+- name:  Restart kibana
+  service: name=kibana enabled=yes state=restarted
+

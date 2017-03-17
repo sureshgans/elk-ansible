@@ -1,0 +1,10 @@
+---
+# The hostname of the server that is going to run the ELK stack
+server_name: elk
+
+# The web authentication credentials to gain access to Kibana
+kibana_user: admin
+kibana_password: admin
+
+# The IP address of the ELK server that is going to be installed
+elk_ip: localhost
