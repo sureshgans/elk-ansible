@@ -11,7 +11,7 @@ This has been tested on RHEL 7.3
 
 Instructions:
 
-git clone https://github.com/sureshgans/testingrepo.git
+git clone https://github.com/sureshgans/elk-ansible.git
 cd elk-ansible
 Run the playbook: ansible-playbook elk.yml
 
